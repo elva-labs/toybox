@@ -2,7 +2,14 @@
 
 A small toolbox of games for the terminal. TypeScript, bundled with esbuild, no runtime dependencies.
 
-## Run
+## Install
+
+```bash
+brew tap elva-labs/elva
+brew install toybox
+```
+
+## Run from source
 
 ```bash
 npm install
