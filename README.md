@@ -1,4 +1,4 @@
-# elva-cli-toybox
+# toybox
 
 A small toolbox of games for the terminal. TypeScript, bundled with esbuild, no runtime dependencies.
 
@@ -9,7 +9,7 @@ npm install
 npm start
 ```
 
-`npm start` builds and launches the game menu. After a build you can also run `node dist/arcade.js`, or link it as `arcade` with `npm link`.
+`npm start` builds and launches the game menu. After a build you can also run `node dist/toybox.js`, or link it as `toybox` with `npm link`.
 
 Everywhere: `q` or escape backs out one level, Ctrl-C quits.
 
@@ -121,7 +121,7 @@ ctx.store.write({ best: 4210 } satisfies Saved);
 
 `read` takes the value to use when nothing has been saved yet, so a first run needs no special case. `write` replaces the whole value, so keep one object per game and put everything in it. Both are synchronous and cheap enough to call whenever a record changes.
 
-Everything lands in one file, `~/.config/elva-cli-toybox/state.json` (or `$XDG_CONFIG_HOME`), with a key per game:
+Everything lands in one file, `~/.config/toybox/state.json` (or `$XDG_CONFIG_HOME`), with a key per game:
 
 ```json
 {

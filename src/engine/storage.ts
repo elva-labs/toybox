@@ -9,7 +9,7 @@ import { dirname, join } from 'node:path';
  */
 const FILE = join(
   process.env.XDG_CONFIG_HOME ?? join(homedir(), '.config'),
-  'elva-cli-toybox',
+  'toybox',
   'state.json',
 );
 

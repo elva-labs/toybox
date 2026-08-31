@@ -1,14 +1,15 @@
 {
-  "name": "elva-cli-toybox",
+  "name": "toybox",
   "version": "1.0.0",
   "private": true,
+  "license": "MIT",
   "type": "module",
   "bin": {
-    "arcade": "dist/arcade.js"
+    "toybox": "dist/toybox.js"
   },
   "scripts": {
-    "build": "esbuild src/main.ts --bundle --platform=node --target=node20 --format=esm --outfile=dist/arcade.js --banner:js='#!/usr/bin/env node' && chmod +x dist/arcade.js",
-    "start": "npm run build && node dist/arcade.js",
+    "build": "esbuild src/main.ts --bundle --platform=node --target=node20 --format=esm --outfile=dist/toybox.js --banner:js='#!/usr/bin/env node' && chmod +x dist/toybox.js",
+    "start": "npm run build && node dist/toybox.js",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
